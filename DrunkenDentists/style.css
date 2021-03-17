@@ -56,6 +56,15 @@ body {
 	font-size: 70%;
 }
 
+.video-preview-img {
+    width: 15%;
+    transition-duration: 100ms;
+}
+
+.video-preview-img:hover {
+    width: 16%;
+}
+
 /* Headlines with DD font */
 
 h {
