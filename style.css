@@ -96,7 +96,7 @@ img {
 	z-index: 0;
 	position: relative;
 	width: 90%;
-	margin: 12% 5% 0% 5%;
+	margin: 13% 5% 0 5%;
 }
 
 #backgroundDiv {
@@ -113,6 +113,7 @@ img {
 }
 
 #shopDiv {
+    margin-top: 100px;
 	text-align: center;
 }
 
