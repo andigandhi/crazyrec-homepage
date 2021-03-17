@@ -57,12 +57,18 @@ body {
 }
 
 .video-preview-img {
+	margin: 0.5%;
     width: 15%;
+	filter: brightness(0.8);
+	
     transition-duration: 100ms;
+	cursor: pointer;
 }
 
 .video-preview-img:hover {
+	margin: 0;
     width: 16%;
+	filter: brightness(1);
 }
 
 /* Headlines with DD font */

@@ -85,22 +85,30 @@
 				</div>
 			</div>
 
-			<hr style="background-color:#282743;color:#282743; margin-top: 3%; margin-bottom: 5%;">
+			<hr style="background-color:#282743;color:#282743; margin-top: 3%;">
 
 			<div id="videos" class="middle" align="center">
 				<h>MUSIKVIDEOS</h><br>
 				
 				<div style="margin-top: 50px"></div>
 				
-				<a href="https://www.youtube.com/watch?v=ADv4MzvCacU"><img alt="bunter affe" src="img/video_tab/bunter_affe.jpg" class="video-preview-img" /></a>
-				<a href="https://www.youtube.com/watch?v=nrgAsiZ9E4A"><img alt="in the end" src="img/video_tab/in_the_end.jpg" class="video-preview-img" /></a>
-				<a href="https://www.youtube.com/watch?v=A4SpnhMMP_E"><img alt="media stupedia" src="img/video_tab/media_stupedia.jpg" class="video-preview-img" /></a>
-				<a href="https://www.youtube.com/watch?v=TATUEMVXI4Q"><img alt="same issue" src="img/video_tab/same_issue_1.jpg" class="video-preview-img" /></a>
+				<div align="center" style="width: 850px">
+					<iframe id="YTpreviewFrame" style="vertical-align: middle;" width="750vw" height="375vw" type="text/html" src="ADv4MzvCacU" frameborder="0" allowfullscreen ></iframe>
+				</div>
 				
-				<!--     MUSIC-PLAYER with JS?
-				<div align="center" style="margin-top: 2%; width: 850px">
-					<iframe style="vertical-align: middle;" width="750vw" height="375vw" type="text/html" src="" frameborder="0" allowfullscreen ></iframe>
-				</div>-->
+				<div style="margin-top: 50px"></div>
+				
+				<img alt="bunter affe" src="img/video_tab/bunter_affe.jpg" class="video-preview-img" onClick="loadYtVideo(0)" />
+				<img alt="in the end" src="img/video_tab/in_the_end.jpg" class="video-preview-img" onClick="loadYtVideo(1)" />
+				<img alt="media stupedia" src="img/video_tab/media_stupedia.jpg" class="video-preview-img" onClick="loadYtVideo(2)" />
+				<img alt="same issue" src="img/video_tab/same_issue_1.jpg" class="video-preview-img" onClick="loadYtVideo(3)" />
+					
+				<script>
+					function loadYtVideo(i) {
+						var urls = ["ADv4MzvCacU", "nrgAsiZ9E4A", "A4SpnhMMP_E", "TATUEMVXI4Q"]
+						document.getElementById("YTpreviewFrame").src = "https://www.youtube.com/embed/"+urls[i];
+					}
+				</script>
 				
 			</div>
 			
