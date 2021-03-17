@@ -1,0 +1,164 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="/DrunkenDentists/favicon.ico" type="image/ico">
+		<title>The Drunken Dentists</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+		// Perform Actions when Site is loaded
+		$(window).on('load', function(){
+			setVideoSize();
+			// Hide Loading Screen
+			$('#loading').hide();
+		});
+		
+		function setVideoSize() {
+			// Move content downwards to show the video
+			let bgDiv = document.getElementById("contentBgDiv");
+			bgDiv.style.marginTop = (window.innerWidth*0.43) + "px";
+			bgDiv.style.width =window.innerWidth + "px";
+		}
+		</script>
+	</head>
+
+	<body onresize="setVideoSize()">
+		<div id="loading">
+			<div id="loading-image"></div>
+		</div>
+		
+		<div class="topbox">
+			<a href="../index.html"><img alt="Crazy Records Frontpage" src="img/cr_logo.png" style="height: 40px; float: left; margin-left: 20px; margin-right: -100%"></a>
+			
+			<a href="#wir">Wir</a>
+			<span style="display: inline-block; width: 1%"></span>
+			<a href="#videos">Videos</a>
+			<span style="display: inline-block; width: 1%"></span>
+			<a href="#mehr">Mehr</a>
+			<span style="display: inline-block; width: 1%"></span>
+			<a href="pwd.php" style="font-size: 20px">Für Veranstalter</a>
+		</div>
+		
+		
+		<!-- Logo und Video -->
+		<div class="videoBox" align="center">
+			<img id="logo" alt="" src="img/thedrunkendentists_schrift.png" width="50%" draggable="false" style="margin-top: 5%; filter: invert(1);  position: absolute; transform: translateX(-50%); opacity: 0.75"><br>
+			<!--<a href="#mehr"><img id="playBtn" alt="" src="img/play_button.png" width="5%" draggable="false" style="margin-top: 20%;  position: absolute; transform: translateX(-50%); opacity: 0.8"></a><br>-->
+			<video autoplay="autoplay" muted loop style="position: fixed; left: 0; width: 100%; z-index: -2;">
+				 <source id="startVideo" src="img/bg_video.mp4" type="video/mp4">
+				 Your browser does not support the video tag.
+			</video>
+		</div>
+		
+		<div id="contentBgDiv" class="contentBG" style="min-width: 100%">
+
+
+			<!-- Bandmitglieder -->
+			<div id="wir" class="middle" align="center">
+				<h>The Drunken Dentists sind...</h>
+				
+				<table style="vertical-align: top"><tr>
+					<td style="width: 25%;vertical-align: top;">
+						<img alt="" src="img/benny.jpg" width="100%" draggable="false"><br>
+						<div class="bild_text"><b>Benny Oehler</b> – Vocal, Rhythm Guitar</div>
+					</td>
+					<td style="width: 25%;vertical-align: top;">
+						<img alt="" src="img/manu.jpg" width="100%" draggable="false"><br>
+						<div class="bild_text"><b>Manu Mayer Laugenstange</b> – Lead Guitar</div>
+					</td>
+					<td style="width: 25%;vertical-align: top;">
+						<img alt="" src="img/steve.jpg" width="100%" draggable="false"><br>
+						<div class="bild_text"><b>Crazy Steve</b> – Bass</div>
+					</td>
+					<td style="width: 25%;vertical-align: top;">
+						<img alt="" src="img/andi.jpg" width="100%" draggable="false"><br>
+						<div class="bild_text"><b>Endi Ampl</b> – Drums</div>
+					</td>
+				</tr></table>
+				
+				<div style="width: 50%; text-align: justify; margin-top: 5%;">
+					<p>Die Band <b>The Drunken Dentists</b> kommt aus Dorfen, besteht aus 4 Köpfen und jeder dieser Köpfe enthält andere Genre-Einflüsse, was sich an dem breitgefächerten Soundspektrum der Band erkennen lässt.</p>
+					<p>Angefangen vor ein paar Jahren als reines Experiment, entwickelte es sich zu etwas sehr ernstzunehmendem. Beim Sinnflut-Festival in Erding wurde der NewcomerBand Preis gewonnen und es folgten lokale Auftritte in Bars, auf Studentenparties und Kleinkunstfestivals.</p>
+					<p>Ende des letzten Jahres wurden die Aufnahmen des ersten selbstproduzierten Albums abgeschlossen. Die Band ist gerade dabei Musikvideos zu drehen und schreibt schon wieder an neuen Songs.</p>
+				</div>
+			</div>
+
+			<hr style="background-color:#282743;color:#282743; margin-top: 3%; margin-bottom: 5%;">
+
+			<!-- Videos -->
+			<div id="videos" class="middle" align="center">
+				<h>VIDEOS</h><br>
+				
+				<div align="center" style="margin-top: 2%; width: 850px">
+					<iframe style="vertical-align: middle;" width="750vw" height="375vw" type="text/html" src="https://www.youtube.com/embed/TATUEMVXI4Q" frameborder="0" allowfullscreen ></iframe>
+					<!-- <p style="writing-mode: vertical-rl; text-orientation: mixed;"><b>Bunter Affe</b></p> -->
+				</div>
+				
+				<div style="margin-top: 2%; width: 850px">
+					<iframe width="750vw" height="562.5vw" type="text/html" src="https://www.youtube.com/embed/A4SpnhMMP_E" frameborder="0" allowfullscreen ></iframe>
+					<!-- <p style="writing-mode: vertical-rl; text-orientation: mixed;"><b>The Media Stupedia</b></p> -->
+				</div>
+				
+				<div style="margin-top: 2%; width: 850px">
+					<iframe width="750vw" height="316.5vw" type="text/html" src="https://www.youtube.com/embed/nrgAsiZ9E4A" frameborder="0" allowfullscreen ></iframe>
+					<!-- <p style="writing-mode: vertical-rl; text-orientation: mixed;"><b>In the End You Will Go</b></p> -->
+				</div>
+				
+				<div style="margin-top: 2%; width: 850px">
+					<iframe style="vertical-align: middle;" width="750vw" height="316.5vw" type="text/html" src="https://www.youtube.com/embed/ADv4MzvCacU" frameborder="0" allowfullscreen ></iframe>
+					<!-- <p style="writing-mode: vertical-rl; text-orientation: mixed;"><b>Bunter Affe</b></p> -->
+				</div>
+			</div>
+			
+			
+
+			<!-- Social Media Links -->
+			<hr style="background-color:#282743;color:#282743; margin-top: 3%; margin-bottom: 5%;">
+			<div id="mehr" align="center" style="margin-bottom: 10%">
+				<h>Mehr gibt's hier:</h>
+				<table style="text-align: center; margin-top: 2%"><tr>
+					<td style="width: 16%;vertical-align: top;">
+						<a href="https://www.instagram.com/thedrunkendentists/" aria-label="Instagram">
+							<img alt="" src="img/icons/ig.png"><br>
+							Instagram
+						</a>
+					</td>
+					<td style="width: 16%;vertical-align: top;">
+						<a href="https://www.youtube.com/channel/UCWrEFa70zruTz6NQWU6CNXg?view_as=subscriber" aria-label="YouTube">
+							<img alt="" src="img/icons/yt.png"><br>
+							Youtube
+						</a>
+					</td>
+					<td style="width: 16%;vertical-align: top;">
+						<a href="https://www.facebook.com/TheDrunkenDentists/?modal=admin_todo_tour" aria-label="Facebook">
+							<img alt="" src="img/icons/fb.png"><br>
+							Facebook
+						</a>
+					</td>
+					<td style="width: 16%;vertical-align: top;">
+						<a href="https://open.spotify.com/artist/5bdVuSfCY3VXpaU50GRsK2?si=oeDPkduLQCuc51Gi7eipkQ" aria-label="Spotify">
+							<img alt="" src="img/icons/sp.png"><br>
+							Spotify
+						</a>
+					</td>
+					<td style="width: 16%;vertical-align: top;">
+						<a href="https://www.deezer.com/de/album/154324972" aria-label="Link">
+							<img alt="" src="img/icons/de.png"><br>
+							Deezer
+						</a>
+					</td>
+					<td style="width: 16%;vertical-align: top;">
+						<a href="https://music.apple.com/us/artist/the-drunken-dentists/1518318679" aria-label="Link">
+							<img alt="" src="img/icons/ap.png"><br>
+							Apple Music
+						</a>
+					</td>
+				</tr></table>
+				<br><br><p><a href="pwd.php">Passwortgeschützter Bereich</a><span style="display: inline-block; width: 3%"></span><a href="impressum.html">Impressum</a><span style="display: inline-block; width: 3%"></span><a href="dsgvo.html">Datenschutz</a></p>
+			</div>
+			
+		</div>
+	</body>
+</html>

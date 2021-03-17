@@ -1,0 +1,105 @@
+@charset "utf-8";
+@font-face { font-family: crazy; src: url('font/crazy.otf'); } 
+/* CSS Document */
+body {
+	background-color: #cfcbc0;
+	color: #191b27;
+	font-size: 130%;
+	font-family: "Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+
+.topbox {
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	background-color: #050407;
+	position: fixed;
+	z-index: 1;
+	text-align: center;
+	font-family: "crazy";
+	font-size: 40px;
+}
+.topbox a {
+	color: #BBB;
+}
+
+
+.videoBox {
+	margin-top: 30px;
+	margin-left: -5%;
+	margin-right: -5%;
+}
+
+.bio {
+	margin: auto;
+	width: 90%;
+}
+
+.bio td {
+	padding: 2%;
+}
+
+.bio tr {
+	margin-bottom: 5%;
+}
+
+.contentBG {
+	position: absolute;
+	background-color: #cfcbc0;
+	width: 100%;
+	left: 0;
+}
+
+.middle {
+	padding: 5% 0;
+	position: relative;
+}
+
+.bild_text {
+	text-align: center;
+	font-size: 70%;
+}
+
+/* Headlines with DD font */
+
+h {
+	font-family: "crazy";
+	font-size: 300%;
+}
+
+/* Formatting links */
+
+a {
+	color: #497d90;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/* LOADING SCREEN */
+
+#loading {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	display: block;
+	background-color: #cfcbc0;
+	z-index: 99;
+	text-align: center;
+	
+}
+
+#loading-image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	background: url(img/album.jpg) no-repeat center center;
+}

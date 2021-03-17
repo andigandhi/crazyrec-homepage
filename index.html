@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<link rel="stylesheet" href="style.css">
+		<title>Crazy Records</title>
+	</head>
+
+	<body onResize="resizeWindow()">
+		<div id="sideDiv">
+			<img alt="menu" src="img/logo.png" style="width: 160%">
+			<p><a href="">Shop (todo)</a></p>
+			<p><a href="https://www.facebook.com/crazyrecords123">Facebook</a></p>
+			<p><a href="https://www.youtube.com/channel/UCWrEFa70zruTz6NQWU6CNXg">Youtube-Kanal</a></p>
+			<p><a href="mailto:kontakt@crazy-records.de">Kontakt</a></p>
+		</div>
+		
+		<div id="inhaltDiv">
+			<div class="topbox">
+				<!--<img alt="Crazy Records" draggable="false" src="img/schriftzug.png" style="width: 50%;">-->
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug1.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug2.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug3.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug4.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug5.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug6.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug7.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug8.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug9.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug10.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug11.png" onClick="jump(1);">
+				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug12.png" onClick="jump(1);">
+
+				<script>
+					function resizeWindow() {
+						var width = window.innerWidth / 10;
+						let buchstaben = document.querySelectorAll('.buchstabe');
+						for (let i = 0; i < buchstaben.length; i++) {
+							buchstaben[i].height = width;
+						}
+					}
+					
+					resizeWindow();
+				</script>
+			</div>
+
+			<div id="bandSection">
+				<!--
+				<div id="newsDiv">
+					<div style="margin-top: 70px; margin-bottom: 200px;">Neues:</div>
+				</div>
+
+				<div style="margin: 30px 0">
+					Die Künstler:
+				</div>
+				-->
+
+				<h1>Die crazy Bands</h1>
+
+				<table>
+					<tr>
+						<td>
+							<div class="bandDiv">
+								<a href="DrunkenDentists/index.html">
+									<img alt="The Drunken Dentists" draggable="false" src="img/tdd.jpg" width="100%">
+									<div class="bandOverlay">
+										<div class="bandText"><b>The Drunken Dentists</b><br>Pop Rock/Reggae/Indie</div>
+									</div>
+								</a>
+							</div>
+						</td><td>
+							<div class="bandDiv">
+								<a href="ReisegruppeHaesslich/index.html">
+									<img alt="Reisegruppe Hässlich" draggable="false" src="img/rgh.jpg" width="100%">
+									<div class="bandOverlay">
+										<div class="bandText"><b>Reisegruppe Hässlich</b><br>Punk Rock</div>
+									</div>
+								</a>
+							</div>
+						</td><td>
+							<div class="bandDiv">
+								<a href="https://open.spotify.com/artist/6Tha2t1ZdT05XzhzMsTDLZ?si=5icD8B2bQ0uvNDGvOON6NQ">
+									<img alt="Cycle Paths" draggable="false" src="img/cyp.jpg" width="100%">
+									<div class="bandOverlay">
+										<div class="bandText"><b>Cycle Paths</b><br>Punk Rock</div>
+									</div>
+								</a>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<div class="bandDiv">
+								<a href="https://open.spotify.com/artist/4zmfRf1lTA0tn23x679PMK?si=FR-l8BCTQ-uCesUR3rO2BA">
+									<img alt="High Priority" draggable="false" src="img/hpr.jpg" width="100%">
+									<div class="bandOverlay">
+										<div class="bandText"><b>High Priority</b><br>Alternative Rock/Grunge</div>
+									</div>
+								</a>
+							</div>
+						</td><td>
+							<div class="bandDiv">
+								<a href="https://www.youtube.com/watch?v=xycl98-cBL4">
+									<img alt="The Drunken Dentists" draggable="false" src="img/bftbk.jpg" width="100%">
+									<div class="bandOverlay">
+										<div class="bandText"><b>KingFrøhling<br>Yung Molocock</b><br>Trap</div>
+									</div>
+								</a>
+							</div>
+						</td>
+					</tr>
+
+
+				</table>
+			</div>
+
+			<div id="shopDiv">
+				<h1>Der crazy Shop</h1>
+				<iframe src="https://prankalot.com/" width="90%" height="300px"></iframe>
+			</div>
+
+
+			<div id="impressumDiv">
+				<a href="impressum.html">Impressum</a> -- <a href="dsgvo.html">Datenschutz</a> -- <a href="mailto:kontakt@crazy-records.de">Kontakt</a>
+			</div>
+		</div>
+	</body>
+</html>

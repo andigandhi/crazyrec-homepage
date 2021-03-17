@@ -1,0 +1,142 @@
+@charset "utf-8";
+@font-face { font-family: crazy; src: url('font/crazy.otf'); } 
+/* CSS Document */
+body {
+	background-color: #050505;
+	color: #D8D8D8;
+	font-size: 130%;
+	font-family: "Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+	max-width: 100%;
+    overflow-x: hidden;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #D8D8D8;
+}
+
+/*
+img {
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+*/
+
+.topbox {
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px 0;
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+}
+
+.topbox a {
+	color: #BBB;
+}
+
+
+.bandDiv {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: .5s ease;
+	filter: grayscale(100%);
+}
+
+.bandDiv:hover .bandOverlay {
+	opacity: 0.66;
+}
+
+.bandDiv:hover {
+	filter: grayscale(40%);
+}
+
+.bandOverlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #050505;
+	
+	cursor: pointer;
+}
+
+.bandText {
+	position: absolute;
+	color: white;
+	font-size: 25px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.buchstabe {
+	transition: .5s ease;
+}
+
+.buchstabe:hover {
+	transform: scaleX(-100%);
+}
+
+#bandSection {
+	text-align: center;
+	z-index: 0;
+	position: relative;
+	width: 90%;
+	margin: 12% 5% 0% 5%;
+}
+
+#backgroundDiv {
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	margin-left: -6%;
+	transition: .5s ease;
+}
+
+#backgroundDiv:hover {
+	margin-left: -1px;
+}
+
+#shopDiv {
+	text-align: center;
+}
+
+#impressumDiv {
+	text-align: center;
+	margin: 5% 0;
+}
+
+/* SIDE DIV MENU */
+#sideDiv {
+	position: fixed;
+	text-align: right;
+	z-index: 100;
+	background-color: #000;
+	padding: 1%;
+	width: 10%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	margin-left: -12%;
+	
+	transition: .5s ease;
+}
+
+#sideDiv:hover {
+	margin-left: 0;
+}
