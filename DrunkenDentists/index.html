@@ -105,8 +105,10 @@
 					
 				<script>
 					function loadYtVideo(i) {
-						var urls = ["ADv4MzvCacU", "nrgAsiZ9E4A", "A4SpnhMMP_E", "TATUEMVXI4Q"]
-						document.getElementById("YTpreviewFrame").src = "https://www.youtube.com/embed/"+urls[i];
+						var urls = [["ADv4MzvCacU", 750], ["nrgAsiZ9E4A", 889], ["A4SpnhMMP_E", 500], ["TATUEMVXI4Q", 889]];
+						var iFrame = document.getElementById("YTpreviewFrame");
+						iFrame.src = "https://www.youtube.com/embed/"+urls[i][0];
+						iFrame.width = urls[i][1] + "vw";
 					}
 				</script>
 				
