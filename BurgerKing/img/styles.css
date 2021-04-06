@@ -1,0 +1,47 @@
+@font-face { font-family: blockpro; src: url('block_font.woff'); } 
+
+body {
+    overflow: hidden;
+}
+
+#iconBK {
+    height: 90px;
+    float: left;
+    position: fixed;
+    z-index: 100;
+}
+
+.menuPoint {
+    font-size: 25px;
+    line-height: 22px;
+    color: #682F1C;
+    text-transform: uppercase;
+    outline: 0;
+    text-decoration: none;
+    font-family: blockpro,sans-serif;
+}
+
+.menuDiv {
+    position: fixed;
+    background-color: #fff;
+    padding: 13px 8%;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+#YTIframe {
+    position: absolute;
+    left: 0;
+}
+
+#white-bottom {
+    background-color: #fff;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+}

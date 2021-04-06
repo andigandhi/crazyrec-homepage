@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Burger King®</title>
+    <link rel="stylesheet" href="img/styles.css">
+</head>
+
+
+<body>
+
+    <a href="crazyrec.de"><img id="iconBK" src="img/bk_ic_ema_logo.svg" alt="" title=""></a>
+    <div class="menuDiv">
+        <a href="crazyrec.de" class="menuPoint" target="" >King's Selection</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="shop.crazyrec.de" class="menuPoint" target="" >Lieferservice</a>
+    </div>
+    
+    <iframe id="YTIframe" width="750vw" height="375vw" type="text/html" src="https://www.youtube.com/embed/xycl98-cBL4" frameborder="0" allowfullscreen ></iframe>
+
+    <div id="white-bottom"></div>
+
+    <script>
+        var iFrame = document.getElementById("YTIframe");
+        iFrame.width = window.innerWidth;
+        iFrame.height = window.innerWidth/1.77;
+
+        iFrame.style.marginTop = -(iFrame.height * 0.12).toString() + "px";
+        document.getElementById("white-bottom").style.marginTop = (iFrame.height * 0.75).toString() + "px";
+    </script>
+</body>
+</html>
