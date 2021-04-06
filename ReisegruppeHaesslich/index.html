@@ -45,7 +45,43 @@
 			  </tbody>
 			</table>
 		</div>
+
+
 		<img alt="" src="img/icons/beer.png" style="width: 50px; margin: 2% 0;">
+
+
+		<div id="videos" text-align="center" style="font-size: 120%;">
+			<b>MUSIKVIDEOS</b><br>
+			
+			<div style="margin-top: 50px"></div>
+			
+			<div self-align="center" style="">
+				<iframe id="YTpreviewFrame" style="vertical-align: middle;" width="750vw" height="375vw" type="text/html" src="" frameborder="0" allowfullscreen ></iframe>
+			</div>
+			
+			<div style="margin-top: 50px"></div>
+			
+			<img alt="GUCCI REVOLTE" src="img/yt/gucci.jpg" class="video-preview-img" onClick="loadYtVideo(0)" />
+			<img alt="REISEDURCHSAGE" src="img/yt/durchsage.jpg" class="video-preview-img" onClick="loadYtVideo(1)" />
+			<img alt="BÄNKER MIT POMMES" src="img/yt/baenker.jpg" class="video-preview-img" onClick="loadYtVideo(2)" />
+				
+			<script>
+				function loadYtVideo(i) {
+					var urls = [["MMIh3skqsUU", 667], ["m_1vl942rvw", 667], ["t5B8hVm6lcg", 375]];
+					var iFrame = document.getElementById("YTpreviewFrame");
+					iFrame.src = "https://www.youtube.com/embed/"+urls[i][0];
+					iFrame.width = urls[i][1] + "vw";
+				}
+
+				loadYtVideo(0);
+			</script>
+			
+		</div>
+
+
+		<img alt="" src="img/icons/beer.png" style="width: 50px; margin: 2% 0;">
+
+
 		<div id="socialLinks">
 			<p><b>LINKS</b></p>
 			<p><a href="https://open.spotify.com/artist/4yU9NWDR2oKye8Z7BFKGz2?si=7SUnT8XMQEysGx4R_4Arqg">SPOTIFY</a></p>

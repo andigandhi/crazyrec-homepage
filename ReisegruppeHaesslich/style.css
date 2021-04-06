@@ -82,6 +82,21 @@ a:hover {
 	width: 60%;
 }
 
+.video-preview-img {
+	margin: 0.5%;
+    width: 15%;
+	filter: brightness(0.8);
+	
+    transition-duration: 100ms;
+	cursor: pointer;
+}
+
+.video-preview-img:hover {
+	margin: 0;
+    width: 16%;
+	filter: brightness(1);
+}
+
 @media only screen and (max-width: 1000px) {
 	.contentWidthDiv {
 		margin-left: 0;
