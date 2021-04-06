@@ -21,10 +21,10 @@ body {
     font-family: blockpro,sans-serif;
 }
 
-.menuDiv {
+#menuDiv {
     position: fixed;
     background-color: #fff;
-    padding: 13px 8%;
+    padding: 13px 0px;
     text-align: center;
     left: 0;
     top: 0;

@@ -6,10 +6,10 @@
 </head>
 
 
-<body>
+<body onresize="fitIframe()">
 
     <a href="https://crazyrec.de"><img id="iconBK" src="img/bk_ic_ema_logo.svg" alt="" title=""></a>
-    <div class="menuDiv">
+    <div id="menuDiv">
         <a href="https://crazyrec.de" class="menuPoint" target="" >King's Selection</a>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://shop.crazyrec.de" class="menuPoint" target="" >Lieferservice</a>
@@ -20,12 +20,18 @@
     <div id="white-bottom"></div>
 
     <script>
-        var iFrame = document.getElementById("YTIframe");
-        iFrame.width = window.innerWidth;
-        iFrame.height = window.innerWidth/1.77;
+        function fitIframe() {
+            var iFrame = document.getElementById("YTIframe");
 
-        iFrame.style.marginTop = -(iFrame.height * 0.12).toString() + "px";
-        document.getElementById("white-bottom").style.marginTop = (iFrame.height * 0.75).toString() + "px";
+            var clientWidth = Math.max(window.innerWidth, document.documentElement.clientWidth);
+
+            iFrame.width = clientWidth;
+            iFrame.height = clientWidth/1.77;
+
+            iFrame.style.marginTop = -(iFrame.height * 0.12).toString() + "px";
+            document.getElementById("white-bottom").style.marginTop = (iFrame.height * 0.75).toString() + "px";
+        }
+        fitIframe();
     </script>
 </body>
 </html>
