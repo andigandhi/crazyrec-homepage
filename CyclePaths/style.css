@@ -1,0 +1,19 @@
+/* CSS Document */
+
+body {
+	color: #FFF;
+	background-color: #000;
+	
+	text-align: center;
+	font-size: 130%;
+	font-family: "Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #DDD;
+}
+
+a:hover {
+	color: #FFF;
+}
