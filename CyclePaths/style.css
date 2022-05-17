@@ -17,3 +17,35 @@ a {
 a:hover {
 	color: #FFF;
 }
+
+.wrapper {
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	perspective: 10px;
+}
+
+#background-image-div{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.scroll::after {
+	content: " ";
+	z-index: -1;
+	object-fit: cover;
+	transform: translateZ(-1px) scale(1.5);
+	background-size: 100%;
+	z-index: -1;
+}
+
+.bgImg {
+	width: 100%;
+	display:block;
+	-webkit-user-drag: none;
+	transform: translateZ(-10px);
+}
