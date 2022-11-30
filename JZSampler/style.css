@@ -1,0 +1,111 @@
+/* CSS Document */
+
+body {
+	background-image: url(img/bg.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: #FFF;
+	background-color: #000;
+	
+	text-align: center;
+	font-size: 130%;
+	font-family: "Segoe UI","Roboto","Oxygen-Sans","Ubuntu","Cantarell","Helvetica Neue",sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #DDD;
+}
+
+a:hover {
+	color: #FFF;
+}
+
+#bgDiv {
+	position: fixed;
+	top: -50%;
+	height: 200%;
+	background-color: #000;
+	z-index: -1;
+	
+	filter: blur(10px);
+  	-webkit-filter: blur(10px);
+	opacity: 0.85;
+}
+
+#logoImg {
+	content:url(img/logo.png);
+	margin: 5% 0;
+}
+
+#logoImg:hover {
+	content:url(img/cr_logo.png);
+}
+
+#storyDiv {
+	text-align: justify;
+	width: 96%;
+	margin: 0 2%;
+}
+
+#socialLinks {
+	font-size: 120%;
+}
+
+/* Arrows for the image gallery */
+.imgControl {
+	width: 5%;
+	cursor: pointer;
+	margin: 20% 0;
+}
+
+
+/* Text align for the table of the band */
+.leftTd {
+	padding-right: 10px;
+	text-align: right;
+}
+
+.rightTd {
+	padding-left: 10px;
+	text-align: left;
+}
+
+.bandTr {
+	transition-duration: 500ms;
+}
+
+
+.contentWidthDiv {
+	margin-left: 20%;
+	width: 60%;
+}
+
+.video-preview-img {
+	margin: 0.5%;
+    width: 15%;
+	filter: brightness(0.8);
+	
+    transition-duration: 100ms;
+	cursor: pointer;
+}
+
+.video-preview-img:hover {
+	margin: 0;
+    width: 16%;
+	filter: brightness(1);
+}
+
+@media only screen and (max-width: 1000px) {
+	.contentWidthDiv {
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	#bgDiv {
+		filter: blur(0px);
+		-webkit-filter: blur(0px);
+		left: 0;
+	}
+}
