@@ -16,6 +16,10 @@ a {
 	color: #D8D8D8;
 }
 
+table {
+	text-align: center;
+}
+
 /*
 img {
 	user-drag: none; 
@@ -92,7 +96,7 @@ img {
 	transform: scaleX(-100%);
 }
 
-#bandSection {
+.bandSection {
 	text-align: center;
 	z-index: 0;
 	position: relative;

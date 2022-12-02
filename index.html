@@ -16,8 +16,42 @@
 		</div>
 		
 		<div id="inhaltDiv">
+			<div class="bandSection">
+				<table>
+					<tr>
+						<td>
+							<div class="bandDiv">
+								<a href="DrunkenDentists/index.html">
+									<img alt="The Drunken Dentists" draggable="false" src="img/tdd.jpg" width="100%">
+									<div class="bandOverlay">
+										<div class="bandText"><b>The Drunken Dentists</b><br>Pop Rock/Reggae/Indie</div>
+									</div>
+								</a>
+							</div>
+						</td><td>
+							<div class="bandDiv">
+								<a href="ReisegruppeHaesslich/index.html">
+									<img alt="Reisegruppe Hässlich" draggable="false" src="img/rgh.jpg" width="100%">
+									<div class="bandOverlay">
+										<div class="bandText"><b>Reisegruppe Hässlich</b><br>Deutschpunk</div>
+									</div>
+								</a>
+							</div>
+						</td><td>
+							<div class="bandDiv">
+								<a href="CyclePaths/index.html">
+									<img alt="Cycle Paths" draggable="false" src="img/cyp.jpg" width="100%">
+									<div class="bandOverlay">
+										<div class="bandText"><b>Cycle Paths</b><br>Punk Rock</div>
+									</div>
+								</a>
+							</div>
+						</td>
+					</tr>
+				</table>
+			</div>
+
 			<div class="topbox">
-				<!--<img alt="Crazy Records" draggable="false" src="img/schriftzug.png" style="width: 50%;">-->
 				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug1.png" onClick="jump(1);">
 				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug2.png" onClick="jump(1);">
 				<img alt="" class="buchstabe" draggable="false" src="img/schriftzug/schriftzug3.png" onClick="jump(1);">
@@ -44,46 +78,8 @@
 				</script>
 			</div>
 
-			<div id="bandSection">
-
-				<div id="shopDiv">
-					<a href="https://shop.crazyrec.de" class="hoverH1"><h1>&darr;<br>&rarr; Zum Crazy Records Online Shop &larr;<br>&uarr;</h1></a>
-				</div>
-
-				<h1 class="hoverH1">&darr;Die crazy Bands&darr;</h1>
-
+			<div class="bandSection">
 				<table>
-					<tr>
-						<td>
-							<div class="bandDiv">
-								<a href="DrunkenDentists/index.html">
-									<img alt="The Drunken Dentists" draggable="false" src="img/tdd.jpg" width="100%">
-									<div class="bandOverlay">
-										<div class="bandText"><b>The Drunken Dentists</b><br>Pop Rock/Reggae/Indie</div>
-									</div>
-								</a>
-							</div>
-						</td><td>
-							<div class="bandDiv">
-								<a href="ReisegruppeHaesslich/index.html">
-									<img alt="Reisegruppe Hässlich" draggable="false" src="img/rgh.jpg" width="100%">
-									<div class="bandOverlay">
-										<div class="bandText"><b>Reisegruppe Hässlich</b><br>Punk Rock</div>
-									</div>
-								</a>
-							</div>
-						</td><td>
-							<div class="bandDiv">
-								<a href="CyclePaths/index.html">
-									<img alt="Cycle Paths" draggable="false" src="img/cyp.jpg" width="100%">
-									<div class="bandOverlay">
-										<div class="bandText"><b>Cycle Paths</b><br>Punk Rock</div>
-									</div>
-								</a>
-							</div>
-						</td>
-					</tr>
-
 					<tr>
 						<td>
 							<div class="bandDiv">
@@ -95,8 +91,9 @@
 								</a>
 							</div>
 						</td><td>
-							<div class="bandDiv">
+							<div class="bandDiv" id="samplerImg">
 								<a href="JZSampler/index.html">
+									<style>#samplerImg:hover {filter: invert();}</style>
 									<img alt="JUZ Sampler" draggable="false" src="img/jzsmpl.jpg" width="100%">
 									<div class="bandOverlay">
 										<div class="bandText"><b>JZ Dorfen Sampler<br>1996</b></div>
@@ -114,11 +111,12 @@
 							</div>
 						</td>
 					</tr>
-
-
 				</table>
 			</div>
 
+			<div id="shopDiv">
+				<a href="https://shop.crazyrec.de" class="hoverH1"><h1>&darr;<br>&rarr; Zum Crazy Records Online Shop &larr;<br>&uarr;</h1></a>
+			</div>
 
 			<div id="impressumDiv">
 				<a href="impressum.html">Impressum</a> -- <a href="dsgvo.html">Datenschutz</a> -- <a href="mailto:kontakt@crazy-records.de">Kontakt</a>
